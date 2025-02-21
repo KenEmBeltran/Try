@@ -1,117 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&family=Source+Sans+3:wght@400&display=swap');
 
+// Reset and Global Styles
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Urbanist', 'Source Sans 3', sans-serif;
 }
+
 body {
-    width: 1440;
-    height: 5113;
-    top: -3401px;
-    left: 1180px;
+    width: 1440px;
+    height: 100%; // Set height to 100% to ensure it covers the full viewport height
     background-color: #141413;
 }
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 150px;     
+    padding: 20px 150px;
 }
+
 .logo {
     width: 194px;
-    height: 48px;
-    top: 22px;
-    left: 150px;    
 }
+
 .nav {
-    width: 424px;
-    height: 32px;
-    top: 30px;
-    left: 870px;
+    display: flex;
     gap: 44px;
 
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+
+        &.home {
+            color: #F1C077;
+        }
+    }
 }
-.nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font: 'Urbanist';
-    font-weight: 700;
-}
-.home{
-    color: #F1C077;
 
-}
-
-
-//section//
-
-
-
+// Hero Section
 .hero {
-    width: 680px;
-    height: 333px;
-    top: 258px;
-    left: 130px;
-    gap: 40px;
-
-}
-.hero-text {
-    width: 680px;
-    height: 333px;
-    position: absolute;
-    top: 258px;
-    left: 130px;
     display: flex;
-    flex-direction: column;
-    gap: 40;
+    align-items: center;
+    padding: 60px 150px;
+    gap: 40px;
 }
-.hero h1 {
-    font-family: Urbanist;
-    font-weight: 800;
-    font-size: 65px;
-    line-height: 71px;
-    letter-spacing: 0%;
-    color: #E8951B;    
-}
-.hero p {
-    font-family: Source Sans Pro;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 37.71px;
-    letter-spacing: 1px;
-    color: #FBEDD8;
-}
-.download-buttons {
-    width: 452px;
-    height: 61px;
-    gap: 28px;
 
-
-}
-.download-buttons img {
-    width: 150px;
-}
-.hero-image {
-    position: absolute;
-    width: 591px;
-    height: 786px;
-    top: 64px;
-    left: 742px;
-
-}
-.hero-image img {
-    width: 591;
-    height: 786;
-    top: 64px;
-    left: 742px;
+.hero-text {
+    max-width: 680px;
     
-}
-img, svg {
-    vertical-align: middle;
-    margin-right: 28px;
-}
-.highlight {
-    color: #F1C077;
-}
-//section2//
+    h1 {
+        font-weight: 800;
+        font-size: 65px;
+        line-height: 1.1; // Adjusted for better spacing
+        color: #E8951B;
 
+        .highlight {
+            color: #F1C077;
+        }
+    }
+
+    p {
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.25; // Adjusted for better readability
+        color: #FBEDD8;
+    }
+
+    .download-buttons {
+        display: flex;
+        gap: 28px;
+        
+        img {
+            width: 150px;
+        }
+    }
+}
+
+.hero-image {
+    flex: 1; // Allow the image to resize flexibly
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
