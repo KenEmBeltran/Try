@@ -111,3 +111,156 @@ body {
     margin-left: 183px;
 }
 
+
+.wrapper.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  // Centers vertically
+    align-items: center;  // Centers horizontally
+    text-align: center;
+    height: 100vh;  // Full viewport height
+    background-color: #141413;
+}
+
+
+//job//
+.job-seeker.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    background-color:   #141413;
+
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ffffff;
+        .highlight {
+            color: #f4a733;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #c0c0c0;
+        max-width: 600px;
+    }
+}
+
+.job.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    background-color: #141413;
+}
+
+.job-text {
+    flex: 1;
+    max-width: 600px;
+
+    h4 {
+        font-size: 1.5rem;
+        color: #ffffff;
+        font-weight: bold;
+
+        &.highlight {
+            color: #f4a733;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        color: #c0c0c0;
+    }
+}
+
+.job-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .job.container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .job-image {
+        order: -1; // Moves the image above text on small screens
+    }
+}
+//employer//
+.employer-section{
+    background-color: #141413;
+}
+.employer-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.employer-header h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.employer-header .highlight {
+    color: #f4a733;
+}
+
+.employer-header p {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    max-width: 800px;
+    margin: 0 auto; /* Centers paragraph */
+}
+
+/* Ensure the image and text are in the same row */
+.employer-content .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Image Styling */
+.employer-image {
+    flex: 1;
+    max-width: 45%;
+}
+
+.employer-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Text Content Styling */
+.employer-text {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.text-box h4 {
+    color: #f4a733;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-box p {
+    color: #c0c0c0;
+    font-size: 1.1rem;
+}
