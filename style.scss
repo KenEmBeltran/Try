@@ -4,7 +4,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background-color: #141413;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -115,10 +115,9 @@ body {
 .wrapper.container {
     display: flex;
     flex-direction: column;
-    justify-content: center;  // Centers vertically
-    align-items: center;  // Centers horizontally
+    justify-content: center;  
     text-align: center;
-    height: 100vh;  // Full viewport height
+    height: 100vh;  
     background-color: #141413;
 }
 
@@ -195,7 +194,7 @@ body {
     }
 
     .job-image {
-        order: -1; // Moves the image above text on small screens
+        order: -1; 
     }
 }
 //employer//
@@ -221,7 +220,7 @@ body {
     font-size: 1.2rem;
     color: #c0c0c0;
     max-width: 800px;
-    margin: 0 auto; /* Centers paragraph */
+    margin: 0 auto; 
 }
 
 /* Ensure the image and text are in the same row */
@@ -230,7 +229,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap; 
 }
 
 /* Image Styling */
@@ -262,4 +261,80 @@ body {
 .text-box p {
     color: #c0c0c0;
     font-size: 1.1rem;
+}
+
+//download//
+/* Section Container */
+.downloadapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+/* Hover Box Wrapper */
+.downloadapp-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000; 
+    border-radius: 20px; 
+    padding: 3rem;
+    width: 1180px;
+    height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.downloadapp-wrapper:hover {
+    transform: translateY(-5px); /* Lifts the box */
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.2); /* Soft glow effect */
+}
+
+/* Left Side: Text and Buttons */
+.app-text {
+    flex: 1;
+    color: white;
+    max-width: 50%;
+}
+
+.app-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.app-text .highlight {
+    color: #f4a733; 
+}
+
+.app-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #c0c0c0;
+}
+
+/* Buttons */
+.app-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.app-buttons img {
+    width: 150px; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+.app-buttons a:hover img {
+    transform: scale(1.1);
+}
+
+/* Right Side: Image */
+.app-image {
+    width: 433;
+    height: 572;
+    top: 3643px;
+    left: 1253px;
 }
