@@ -338,3 +338,92 @@ body {
     top: 3643px;
     left: 1253px;
 }
+
+//getintouch//
+/* Background Styling */
+.get {
+    background-image: url('/css/Rectangle\ 34624148.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh;
+}
+
+/* Get In Touch Box */
+.getintouch {
+    background-image: url('Image_Assets/Desktop_Assets/desktop-bg-swirls.svg');
+    width: 480px;
+    height: 126px;
+    top: 4450px;
+    left: 480px;
+    gap: 12px;
+
+}
+
+/* Title Styling */
+.getintouch h2 {
+    font-family: 'Urbanist';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50.4px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #E8951B;    
+    height: 50px;
+    margin-bottom: 12px;
+}
+
+/* Paragraph Styling */
+.getintouch p {
+    font-family: 'Source Sans Pro';
+    font-weight: 400px;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 480px;
+    height: 64px;
+    margin-bottom: 38px;
+    
+}
+
+
+/* Input Fields */
+.getintouch input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center; /* Aligns input text center */
+    border-style: ridge;
+}
+
+/* Placeholder Text */
+.getintouch input::placeholder {
+    color: #bbb;
+    text-align: center;
+}
+
+/* Submit Button */
+.getintouch button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #ff9800, #ffcc00);
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Button Hover Effect */
+.getintouch button:hover {
+    background: linear-gradient(to right, #ffcc00, #ff9800);
+}
