@@ -418,7 +418,7 @@ body {
     border: none;
     color: black;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 130.43px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -426,4 +426,42 @@ body {
 /* Button Hover Effect */
 .getintouch button:hover {
     background: linear-gradient(to right, #ffcc00, #ff9800);
+}
+
+//footer//
+.footer {
+    background-color: #111; /* Dark background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Adjusting logo */
+.footer img {
+    height: 30px; /* Adjust logo size */
+}
+
+/* Footer navigation */
+.footernav {
+    display: flex;
+    gap: 83px; /* Space between items */
+    width: 832.0009765625px;
+    height: 32px;
+    top: 5055px;
+    left: 530px;
+
+}
+
+/* Footer links */
+.footernav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footernav a:hover {
+    text-decoration: underline;
 }
