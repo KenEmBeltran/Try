@@ -346,8 +346,8 @@ body {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    justify-content: center; 
+    align-items: center; 
     height: 100vh;
 }
 
@@ -430,24 +430,25 @@ body {
 
 //footer//
 .footer {
-    background-color: #111; /* Dark background */
+    background-color: #111;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
     color: white;
     margin-top: 10px;
+    background-color: #262626;
 }
 
 /* Adjusting logo */
 .footer img {
-    height: 30px; /* Adjust logo size */
+    height: 30px;
 }
 
 /* Footer navigation */
 .footernav {
     display: flex;
-    gap: 83px; /* Space between items */
+    gap: 83px; 
     width: 832.0009765625px;
     height: 32px;
     top: 5055px;
