@@ -360,40 +360,43 @@ body {
 .getintouch {
     background-image: url('Image_Assets/Desktop_Assets/desktop-bg-swirls.svg');
     width: 480px;
-    height: 126px;
-    top: 4450px;
-    left: 480px;
-    gap: 12px;
-
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 /* Title Styling */
 .getintouch h2 {
-    font-family: 'Urbanist';
+    font-family: 'Urbanist', sans-serif;
     font-weight: 700;
     font-size: 42px;
     line-height: 50.4px;
     letter-spacing: 0%;
-    text-align: center;
     color: #E8951B;    
-    height: 50px;
     margin-bottom: 12px;
 }
 
 /* Paragraph Styling */
 .getintouch p {
-    font-family: 'Source Sans Pro';
-    font-weight: 400px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 1px;
-    text-align: center;
-    width: 480px;
-    height: 64px;
-    margin-bottom: 38px;
-    
+    width: 100%;
+    margin-bottom: 20px;
 }
 
+/* Form Styling */
+.getintouch form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 /* Input Fields */
 .getintouch input {
@@ -432,6 +435,7 @@ body {
 .getintouch button:hover {
     background: linear-gradient(to right, #ffcc00, #ff9800);
 }
+
 
 //footer//
 .footer {
